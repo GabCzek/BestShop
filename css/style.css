@@ -1,3 +1,6 @@
+/*Problems:
+-Nie mogę ustawić wysokości hero*/
+
 :root {
     --color-primary: #08A6E4;
     --color-primary-shadow: rgba(7, 172, 230, .16);
@@ -7,8 +10,8 @@
     --color-grey: #A5A5A5;
     --color-light-grey: #F7F7F7;
     --color-white: #FFFFFF;
-    --main-font: 'Open Sans', sans-serif;
-    --secondary-font: 'Raleway', sans-serif;
+    --main-font: 'Raleway', sans-serif;
+    --secondary-font: 'Open Sans', sans-serif;
 }
 
 * {
@@ -17,16 +20,25 @@
 
 .container {
     max-width: 1352px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* HEADER */
+
+header {
+    width: 100vw;
+    box-shadow: 0px 3px 6px #00000029;
 }
 
 .main--nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0px 3px 6px #00000029;
+    flex-grow: 1;
 }
 
-.main--nav h1 {
+.main--nav p {
     font-family: var(--main-font);
     font-size: 32px;
     color: var(--color-primary);
@@ -44,6 +56,7 @@
 
 .main--nav li {
     text-transform: uppercase;
+    font-family: var(--secondary-font);
     font-size: 11px;
     font-weight: 700;
     color: var(--color-grey);
@@ -58,3 +71,70 @@
     color: var(--color-black);
     border-bottom: 4px solid var(--color-primary);
 }
+
+/* OPENING SECTION */
+
+.hero {
+    padding-top: 130px;
+    height: calc(100vh - 67px);
+}
+
+.hero_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 5px;
+}
+
+.hero h1 {
+    font-family: var(--main-font);
+    font-size: 49px;
+}
+
+.hero p {
+    font-family: var(--secondary-font);
+    margin-bottom: 16px;
+}
+
+.hero button {
+    padding: 22px 157px;
+    background-color: var(--color-primary);
+    border-radius: 40px;
+    border: none;
+    box-shadow: 5px 10px 14px var(--color-primary-shadow);
+}
+
+.hero button:active {
+    box-shadow: 2px 2px 3px var(--color-black) inset;
+}
+
+.hero a {
+    text-decoration: none;
+    color: var(--color-white);
+    font-family: var(--secondary-font);
+    font-weight: 700;
+}
+
+.hero img {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
