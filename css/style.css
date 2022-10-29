@@ -27,8 +27,9 @@
 /* HEADER */
 
 header {
-    width: 100vw;
+    width: 100%;
     box-shadow: 0px 3px 6px #00000029;
+
 }
 
 .main--nav {
@@ -77,6 +78,8 @@ header {
 .hero {
     padding-top: 130px;
     height: calc(100vh - 67px);
+    position: relative;
+    min-height: 700px;
 }
 
 .hero_content {
@@ -120,12 +123,14 @@ header {
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 
 /*STATISTICS SECTION*/
 
 .statistics {
-    padding: 100px;
+    padding: 121px;
     display: flex;
     justify-content: center;
 }
@@ -161,7 +166,6 @@ header {
 }
 
 .logo {
-
     height: 63px;
     width: 63px;
     position: relative;
@@ -209,15 +213,141 @@ header {
     font-size: 17px;
 }
 
+/*BENEFITS SECTION*/
 
+.benefits {
+    background-color: var(--color-light-grey);
+}
 
+.benefits_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    padding: 105px 0;
+}
 
+.benefits_article {
+    width: 1124px;
+    height: 370px;
+    display: flex;
+    background-color: var(--color-white);
+    justify-content: space-between;
+}
 
+.benefits_article h3,
+.benefits_article-other h3 {
+    font-family: var(--main-font);
+    font-size: 36px;
+}
 
+.benefits_article p,
+.benefits_article-other p {
+    font-family: var(--secondary-font);
+}
 
+.benefits_article-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 416px;
+    margin: 90px 35px;
+}
 
+.line {
+    display: block;
+    height: 4px;
+    width: 330px;
+}
 
+.first-line {
+    background-color:var(--color-redish);
+}
 
+.second-line {
+    background-color:var(--color-primary);
+}
 
+.third-line {
+    background-color: var(--color-green);
+}
 
+.macbook-img {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 2%;
+}
 
+.macbook-img:after {
+    content: "";
+    background-color: var(--color-redish);
+    display: block;
+    width: 8em;
+    height: 8em;
+    position: absolute;
+    transform: rotate(-45deg);
+    top: 12%;
+    right: 23%;
+    border-radius: 25px;
+}
+
+.macbook-img img {
+    width: 100%;
+    height: auto;
+    padding: 20%;
+    z-index: 1;
+}
+
+.iphone-img {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 2% 6%;
+}
+
+.iphone-img:after {
+    content: "";
+    background-color: var(--color-primary);
+    display: block;
+    width: 20em;
+    height: 20em;
+    position: absolute;
+    border-radius: 50%;
+    left: 10%;
+    top: 3%;
+}
+
+.iphone-img img {
+    width: auto;
+    height: 100%;
+    z-index: 1;
+}
+
+.benefits_article-other {
+    width: 1124px;
+    height: 370px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.benefits_article-text2 {
+    background-color: var(--color-white);
+    height: 370px;
+    margin: 0;
+    flex-grow: 1;
+    padding: 90px 35px;
+}
+
+.trumpet-img {
+    background-color: var(--color-green);
+    width: 440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trumpet-img img {
+    height: 207px;
+}
