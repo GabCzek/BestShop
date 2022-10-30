@@ -571,7 +571,7 @@ form h3 {
     opacity: 0;
 }
 
-#consent {
+.consent input {
     width: 0;
     height: 0;
 }
