@@ -298,9 +298,9 @@ header {
     height: 10em;
     position: absolute;
     transform: rotate(-45deg);
-    top: 20%;
-    right: 20%;
-    border-radius: 25px;
+    top: 21%;
+    right: 21%;
+    border-radius: 41px;
 }
 
 .macbook-img img {
