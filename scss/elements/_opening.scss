@@ -2,7 +2,6 @@
   padding-top: 130px;
   height: calc(100vh - 67px);
   position: relative;
-  min-height: 700px;
 }
 
 .hero_content {
@@ -34,7 +33,11 @@
   text-align: center;
 
   @media (max-width: 670px) {
-    padding: 22px 80px;
+    padding: 26px 120px;
+  }
+
+  @media (max-width: 400px) {
+    padding: 26px 80px;
   }
 }
 
@@ -49,24 +52,25 @@
   font-weight: 700;
 }
 
+.opening-img {
+  width: 100vw;
+  overflow: hidden;
+}
+
+.hero {
+  overflow: hidden;
+}
+
 .hero img {
-  background-size: contain;
-  background-repeat: no-repeat;
+  display: block;
   width: 100%;
   position: absolute;
   bottom: 0;
+  object-fit: contain;
+  max-height: 50%;
 
   @media (max-width: 900px) {
-    height: 60%;
-    width: auto;
-    scale: 60%;
-    bottom: 0;
-  }
-
-  @media (max-width: 670px) {
-    height: 80%;
-    width: auto;
-    scale: 40%;
-    bottom: 0;
+    width: 220%;
+    transform: translateX(-28%);
   }
 }
