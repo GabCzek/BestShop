@@ -1,0 +1,31 @@
+
+footer{
+  box-shadow: 0 -5px 40px #00000029;
+  background-color: var(--color-light-grey);
+}
+
+.footer_container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+.copyright h2 {
+  font-family: var(--main-font);
+  font-size: 26px;
+  color: var(--color-primary);
+  font-weight: 300;
+  margin-bottom: 0.4rem;
+}
+
+.copyright p {
+  font-family: var(--secondary-font);
+  font-size: 11px;
+  color: var(--color-grey);
+}
+
+.social--media {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
