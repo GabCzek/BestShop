@@ -1,16 +1,3 @@
-:root {
-  --color-primary: #08A6E4;
-  --color-primary-shadow: rgba(7, 172, 230, .16);
-  --color-redish: #FB3B64;
-  --color-green: #55DFB4;
-  --color-black: #000000;
-  --color-grey: #A5A5A5;
-  --color-light-grey: #F7F7F7;
-  --color-white: #FFFFFF;
-  --main-font: "Raleway", sans-serif;
-  --secondary-font: "Open Sans", sans-serif;
-}
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -249,6 +236,13 @@ textarea {
   margin-left: auto;
   margin-right: auto;
 }
+@media (max-width: 1352px) {
+  .container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 
 header {
   width: 100%;
@@ -263,9 +257,9 @@ header {
 }
 
 .main-logo {
-  font-family: var(--main-font);
+  font-family: "Raleway", sans-serif;
   font-size: 32px;
-  color: var(--color-primary);
+  color: #08A6E4;
   font-weight: 300;
   flex-grow: 2;
   padding-left: 135px;
@@ -281,21 +275,21 @@ header {
 
 .ref {
   text-transform: uppercase;
-  font-family: var(--secondary-font);
+  font-family: "Open Sans", sans-serif;
   font-size: 11px;
   font-weight: 700;
-  color: var(--color-grey);
+  color: #A5A5A5;
   letter-spacing: 0.2em;
   display: block;
   padding: 26px 15px;
   text-decoration: none;
-  border-bottom: 4px solid var(--color-white);
+  border-bottom: 4px solid #FFFFFF;
 }
 
 .ref:hover {
   cursor: pointer;
-  color: var(--color-black);
-  border-bottom: 4px solid var(--color-primary);
+  color: #000000;
+  border-bottom: 4px solid #08A6E4;
 }
 
 .hero {
@@ -314,31 +308,31 @@ header {
 }
 
 .hero h1 {
-  font-family: var(--main-font);
+  font-family: "Raleway", sans-serif;
   font-size: 49px;
 }
 
 .hero p {
-  font-family: var(--secondary-font);
+  font-family: "Open Sans", sans-serif;
   margin-bottom: 16px;
 }
 
 .open-shop {
   padding: 22px 157px;
-  background-color: var(--color-primary);
+  background-color: #08A6E4;
   border-radius: 40px;
   border: none;
-  box-shadow: 5px 10px 14px var(--color-primary-shadow);
+  box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.16);
 }
 
 .open-shop:active {
-  box-shadow: 2px 2px 3px var(--color-black) inset;
+  box-shadow: 2px 2px 3px #000000 inset;
 }
 
 .hero a {
   text-decoration: none;
-  color: var(--color-white);
-  font-family: var(--secondary-font);
+  color: #FFFFFF;
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
 }
 
@@ -365,7 +359,7 @@ header {
 }
 
 .statistics h2 {
-  font-family: var(--main-font);
+  font-family: "Raleway", sans-serif;
   font-size: 36px;
   align-self: center;
 }
@@ -385,7 +379,7 @@ header {
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  font-family: var(--main-font);
+  font-family: "Raleway", sans-serif;
   width: 116px;
 }
 
@@ -397,7 +391,7 @@ header {
 }
 
 .person-logo {
-  background-color: var(--color-redish);
+  background-color: #FB3B64;
 }
 
 .person-logo img {
@@ -407,7 +401,7 @@ header {
 }
 
 .eye-logo {
-  background-color: var(--color-primary);
+  background-color: #08A6E4;
 }
 
 .eye-logo img {
@@ -417,7 +411,7 @@ header {
 }
 
 .catalog-logo {
-  background-color: var(--color-green);
+  background-color: #55DFB4;
 }
 
 .catalog-logo img {
@@ -433,7 +427,7 @@ header {
 }
 
 .article p {
-  color: var(--color-grey);
+  color: #A5A5A5;
   font-size: 17px;
 }
 
@@ -444,7 +438,7 @@ header {
 }
 
 .pricing-container h2 {
-  font-family: var(--main-font);
+  font-family: "Raleway", sans-serif;
   font-size: 36px;
   align-self: center;
 }
@@ -468,45 +462,45 @@ header {
 }
 
 .pricing-basic {
-  border: 1px solid var(--color-redish);
+  border: 1px solid #FB3B64;
 }
 
 .pricing-article.pricing-prof {
-  border: 1px solid var(--color-primary);
+  border: 1px solid #08A6E4;
   transform: scale(1.1);
-  box-shadow: 5px 10px 27px var(--color-primary-shadow);
+  box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.16);
 }
 
 .pricing-premium {
-  border: 1px solid var(--color-green);
+  border: 1px solid #55DFB4;
 }
 
 .pricing-boxes h3 {
-  font-family: var(--main-font);
+  font-family: "Raleway", sans-serif;
   font-size: 20px;
   font-weight: 700;
 }
 
 .pricing-boxes span {
-  font-family: var(--secondary-font);
+  font-family: "Open Sans", sans-serif;
   font-size: 46px;
   font-weight: 300;
 }
 
 .pricing-basic span {
-  color: var(--color-redish);
+  color: #FB3B64;
 }
 
 .pricing-prof span {
-  color: var(--color-primary);
+  color: #08A6E4;
 }
 
 .pricing-premium span {
-  color: var(--color-green);
+  color: #55DFB4;
 }
 
 .pricing-boxes p {
-  font-family: var(--main-font);
+  font-family: "Raleway", sans-serif;
   font-size: 12px;
   font-weight: 700;
 }
@@ -524,7 +518,7 @@ header {
 }
 
 .pricing-boxes li {
-  font-family: var(--secondary-font);
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
 }
 
@@ -542,9 +536,9 @@ header {
   padding: 0.7rem 2rem;
   border-radius: 23px;
   border: none;
-  font-family: var(--secondary-font);
+  font-family: "Open Sans", sans-serif;
   font-size: 13px;
-  color: var(--color-white);
+  color: #FFFFFF;
   font-weight: 700;
   position: absolute;
   bottom: -10%;
@@ -553,23 +547,23 @@ header {
 }
 
 .pricing-boxes button:active {
-  box-shadow: 2px 2px 3px var(--color-black) inset;
+  box-shadow: 2px 2px 3px #000000 inset;
 }
 
 .pricing-basic button {
-  background-color: var(--color-redish);
+  background-color: #FB3B64;
 }
 
 .pricing-prof button {
-  background-color: var(--color-primary);
+  background-color: #08A6E4;
 }
 
 .pricing-premium button {
-  background-color: var(--color-green);
+  background-color: #55DFB4;
 }
 
 .benefits {
-  background-color: var(--color-light-grey);
+  background-color: #F7F7F7;
 }
 
 .benefits_content {
@@ -584,20 +578,20 @@ header {
   width: 1124px;
   height: 370px;
   display: flex;
-  background-color: var(--color-white);
+  background-color: #FFFFFF;
   justify-content: space-between;
 }
 
 .benefits_article h3,
 .benefits_article-last h3 {
-  font-family: var(--main-font);
+  font-family: "Raleway", sans-serif;
   font-size: 36px;
   line-height: 1.1em;
 }
 
 .benefits_article p,
 .benefits_article-last p {
-  font-family: var(--secondary-font);
+  font-family: "Open Sans", sans-serif;
   line-height: 1.5em;
 }
 
@@ -616,15 +610,15 @@ header {
 }
 
 .first-line {
-  background-color: var(--color-redish);
+  background-color: #FB3B64;
 }
 
 .second-line {
-  background-color: var(--color-primary);
+  background-color: #08A6E4;
 }
 
 .third-line {
-  background-color: var(--color-green);
+  background-color: #55DFB4;
 }
 
 .benefits_article-text1 {
@@ -642,7 +636,7 @@ header {
 
 .macbook-img::after {
   content: "";
-  background-color: var(--color-redish);
+  background-color: #FB3B64;
   display: block;
   width: 10em;
   height: 10em;
@@ -681,7 +675,7 @@ header {
 
 .iphone-img::after {
   content: "";
-  background-color: var(--color-primary);
+  background-color: #08A6E4;
   display: block;
   width: 20em;
   height: 20em;
@@ -711,7 +705,7 @@ header {
 }
 
 .benefits_article-text3 {
-  background-color: var(--color-white);
+  background-color: #FFFFFF;
   height: 370px;
   margin: 0;
   flex-grow: 1;
@@ -719,7 +713,7 @@ header {
 }
 
 .trumpet-img {
-  background-color: var(--color-green);
+  background-color: #55DFB4;
   width: 440px;
   display: flex;
   align-items: center;
@@ -744,12 +738,12 @@ header {
 }
 
 .questions--contact h2 {
-  font-family: var(--main-font);
+  font-family: "Raleway", sans-serif;
   font-size: 49px;
 }
 
 .questions--contact p {
-  font-family: var(--secondary-font);
+  font-family: "Open Sans", sans-serif;
 }
 
 .icons--container {
@@ -758,9 +752,9 @@ header {
 }
 
 .icons--container span {
-  font-family: var(--secondary-font);
+  font-family: "Open Sans", sans-serif;
   font-weight: 600;
-  color: var(--color-grey);
+  color: #A5A5A5;
 }
 
 form {
@@ -772,25 +766,25 @@ form {
 }
 
 .form-row {
-  font-family: var(--secondary-font);
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 11px;
-  color: var(--color-primary);
+  color: #08A6E4;
   letter-spacing: 0.2em;
 }
 
 .form-row input {
   border: none;
-  border-bottom: 1px solid var(--color-grey);
+  border-bottom: 1px solid #A5A5A5;
   width: 100%;
   margin: 1rem 0 2rem 0;
 }
 
 .consent {
   margin-bottom: 1.5rem;
-  font-family: var(--secondary-font);
+  font-family: "Open Sans", sans-serif;
   font-size: 12px;
-  color: var(--color-grey);
+  color: #A5A5A5;
 }
 
 .consent_label {
@@ -822,25 +816,25 @@ form {
 }
 
 .form__button {
-  background-color: var(--color-primary);
+  background-color: #08A6E4;
   padding: 1rem 5rem;
   border-radius: 35px;
   border: none;
-  font-family: var(--secondary-font);
+  font-family: "Open Sans", sans-serif;
   font-size: 13px;
-  color: var(--color-white);
+  color: #FFFFFF;
   font-weight: 700;
-  box-shadow: 5px 10px 14px var(--color-primary-shadow);
+  box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.16);
   align-self: end;
 }
 
 .form__button:active {
-  box-shadow: 2px 2px 3px var(--color-black) inset;
+  box-shadow: 2px 2px 3px #000000 inset;
 }
 
 footer {
   box-shadow: 0 -5px 40px rgba(0, 0, 0, 0.1607843137);
-  background-color: var(--color-light-grey);
+  background-color: #F7F7F7;
 }
 
 .footer_container {
@@ -850,17 +844,17 @@ footer {
 }
 
 .copyright h2 {
-  font-family: var(--main-font);
+  font-family: "Raleway", sans-serif;
   font-size: 26px;
-  color: var(--color-primary);
+  color: #08A6E4;
   font-weight: 300;
   margin-bottom: 0.4rem;
 }
 
 .copyright p {
-  font-family: var(--secondary-font);
+  font-family: "Open Sans", sans-serif;
   font-size: 11px;
-  color: var(--color-grey);
+  color: #A5A5A5;
 }
 
 .social--media {

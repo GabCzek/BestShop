@@ -14,31 +14,38 @@
 }
 
 .hero h1 {
-  font-family: var(--main-font);
+  font-family: $main-font;
   font-size: 49px;
 }
 
 .hero p {
-  font-family: var(--secondary-font);
+  font-family: $secondary-font;
   margin-bottom: 16px;
+  text-align: center;
+  padding: 0 40px;
 }
 
 .open-shop {
   padding: 22px 157px;
-  background-color: var(--color-primary);
+  background-color: $color-primary;
   border-radius: 40px;
   border: none;
-  box-shadow: 5px 10px 14px var(--color-primary-shadow);
+  box-shadow: 5px 10px 14px $color-primary-shadow;
+  text-align: center;
+
+  @media (max-width: 670px) {
+    padding: 22px 80px;
+  }
 }
 
 .open-shop:active {
-  box-shadow: 2px 2px 3px var(--color-black) inset;
+  box-shadow: 2px 2px 3px $color-black inset;
 }
 
 .hero a {
   text-decoration: none;
-  color: var(--color-white);
-  font-family: var(--secondary-font);
+  color: $color-white;
+  font-family: $secondary-font;
   font-weight: 700;
 }
 
@@ -48,4 +55,18 @@
   width: 100%;
   position: absolute;
   bottom: 0;
+
+  @media (max-width: 900px) {
+    height: 60%;
+    width: auto;
+    scale: 60%;
+    bottom: 0;
+  }
+
+  @media (max-width: 670px) {
+    height: 80%;
+    width: auto;
+    scale: 40%;
+    bottom: 0;
+  }
 }

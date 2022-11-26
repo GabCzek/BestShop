@@ -1,6 +1,6 @@
 
 .benefits {
-  background-color: var(--color-light-grey);
+  background-color: $color-light-grey;
 }
 
 .benefits_content {
@@ -15,20 +15,24 @@
   width: 1124px;
   height: 370px;
   display: flex;
-  background-color: var(--color-white);
+  background-color: $color-white;
   justify-content: space-between;
+
+  @media (max-width: 1124px) {
+    width: auto;
+  }
 }
 
 .benefits_article h3,
 .benefits_article-last h3 {
-  font-family: var(--main-font);
+  font-family: $main-font;
   font-size: 36px;
   line-height: 1.1em;
 }
 
 .benefits_article p,
 .benefits_article-last p {
-  font-family: var(--secondary-font);
+  font-family: $secondary-font;
   line-height: 1.5em;
 }
 
@@ -36,7 +40,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 416px;
   margin: 90px 35px;
 }
 
@@ -47,19 +50,20 @@
 }
 
 .first-line {
-  background-color:var(--color-redish);
+  background-color: $color-redish;
 }
 
 .second-line {
-  background-color:var(--color-primary);
+  background-color: $color-primary;
 }
 
 .third-line {
-  background-color: var(--color-green);
+  background-color: $color-green;
 }
 
 .benefits_article-text1 {
   flex: 0 0 auto;
+  width: 416px;
 }
 
 .macbook-img {
@@ -73,7 +77,7 @@
 
 .macbook-img::after {
   content: "";
-  background-color: var(--color-redish);
+  background-color: $color-redish;
   display: block;
   width: 10em;
   height: 10em;
@@ -96,6 +100,7 @@
 .benefits_article-text2 {
   flex: 0 0 auto;
   margin: 70px 25px;
+  width: 416px;
 }
 
 .benefits_article-text2 h3 {
@@ -112,7 +117,7 @@
 
 .iphone-img::after {
   content: "";
-  background-color: var(--color-primary);
+  background-color: $color-primary;
   display: block;
   width: 20em;
   height: 20em;
@@ -142,7 +147,7 @@
 }
 
 .benefits_article-text3 {
-  background-color: var(--color-white);
+  background-color: $color-white;
   height: 370px;
   margin: 0;
   flex-grow: 1;
@@ -150,8 +155,8 @@
 }
 
 .trumpet-img {
-  background-color: var(--color-green);
-  width: 440px;
+  background-color: $color-green;
+  padding: 0 50px 0 50px;
   display: flex;
   align-items: center;
   justify-content: center;

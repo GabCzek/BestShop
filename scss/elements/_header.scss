@@ -1,6 +1,7 @@
 header {
   width: 100%;
-  box-shadow: 0px 3px 6px #00000029;
+  box-shadow: 0 3px 6px #00000029;
+  z-index: 2;
 }
 
 .main-nav {
@@ -8,40 +9,118 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-grow: 1;
+  position: relative;
 }
 
 .main-logo {
-  font-family: var(--main-font);
+  font-family: $main-font;
   font-size: 32px;
-  color: var(--color-primary);
+  color: $color-primary;
   font-weight: 300;
   flex-grow: 2;
-  padding-left: 135px;
+  padding: 17px 0 17px 135px;
   text-decoration: none;
+
+  @media (max-width: 900px) {
+    padding-left: 50px;
+  }
+
+  @media (max-width: 670px) {
+    padding-left: 0;
+  }
 }
 
-.main-nav ul {
+.menu {
   display: flex;
   flex-grow: 1;
   justify-content: space-between;
   padding-right: 135px;
+
+  @media (max-width: 900px) {
+    padding-right: 50px;
+  }
+
+  @media (max-width: 670px) {
+    display: none;
+    flex-direction: column;
+    box-shadow: 0 3px 6px -3px #00000029;
+    position: absolute;
+    bottom: -170px;
+    left: -15px;
+    width: calc(100% + 30px);
+    gap: 15px;
+    padding: 24px 0;
+    z-index: 1;
+    background-color: $color-white;
+  }
 }
 
 .ref {
   text-transform: uppercase;
-  font-family: var(--secondary-font);
+  font-family: $secondary-font;
   font-size: 11px;
   font-weight: 700;
-  color: var(--color-grey);
+  color: $color-grey;
   letter-spacing: 0.2em;
   display: block;
-  padding: 26px 15px;
+  padding: 25px 15px;
   text-decoration: none;
-  border-bottom: 4px solid var(--color-white);
+  border-bottom: 4px solid $color-white;
+
+  @media (max-width: 670px) {
+    padding: 0 0 0 15px;
+  }
 }
 
 .ref:hover {
   cursor: pointer;
-  color: var(--color-black);
-  border-bottom: 4px solid var(--color-primary);
+  color: $color-black;
+  border-bottom: 4px solid $color-primary;
+
+  @media (max-width: 670px) {
+    border-bottom: 4px solid $color-white;
+  }
 }
+
+.page-burger {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: 0;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  position: relative;
+
+  span {
+    width: 30px;
+    height: 3px;
+    background: $color-primary;
+  }
+
+  @media (max-width: 670px) {
+    display: flex;
+  }
+}
+
+.page-burger.is-clicked {
+  span:nth-child(3) {display: none;}
+  span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  span:nth-child(2) {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+}
+
+.menu.is-show {
+  display: flex;
+}
+
