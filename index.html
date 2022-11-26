@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BestShop</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="scss/reset.scss">
+    <link rel="stylesheet" href="scss/style.scss">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;800&display=swap" rel="stylesheet">
@@ -18,13 +18,13 @@
 
 <header>
     <div class="container">
-        <nav class="main--nav">
-            <p>BestShop-test</p>
+        <nav class="main-nav">
+            <a href="#" class="main-logo">BestShop</a>
             <ul class="menu">
-                <li>Why Us</li>
-                <li>Benefits</li>
-                <li>Prices</li>
-                <li>Contact</li>
+                <li><a href="#statistics" class="ref">Why Us</a></li>
+                <li><a href="#benefits" class="ref">Benefits</a></li>
+                <li><a href="#pricing" class="ref">Prices</a></li>
+                <li><a href="#contact" class="ref">Contact</a></li>
             </ul>
         </nav>
     </div>
@@ -34,12 +34,12 @@
     <div class="container hero_content">
         <h1>Sell More!</h1>
         <p>Open shop on our platform and increase your sales</p>
-        <button><a href="#">Open your shop</a></button>
+        <a href="#" class="open-shop">Open your shop</a>
         <img src="assets/Background.png" alt="working on a laptop">
     </div>
 </section>
 
-<section class="statistics">
+<section class="statistics" id="statistics">
     <div class="container statistics_content">
         <h2>The most popular sales platform in country</h2>
         <div class="articles">
@@ -68,7 +68,7 @@
     </div>
 </section>
 
-<section class="benefits">
+<section class="benefits" id="benefits">
     <div class="container benefits_content">
         <article class="benefits_article benefits_article-first">
             <div class="benefits_article-text benefits_article-text1">
@@ -103,7 +103,7 @@
     </div>
 </section>
 
-<section class="pricing">
+<section class="pricing" id="pricing">
     <div class="container pricing-container">
         <h2>Pricing</h2>
         <div class="pricing-boxes">
@@ -149,7 +149,7 @@
     </div>
 </section>
 
-<section class="contact">
+<section class="contact" id="contact">
     <div class="container contact_container">
         <div class="questions--contact">
             <h2>Any questions?</h2>
@@ -166,25 +166,24 @@
             </div>
         </div>
         <form>
-            <h3>NAME</h3>
-            <label>
-            <input type="text" class="input"/>
-            </label>
-            <h3>EMAIL</h3>
-            <label>
-            <input type="text" class="input"/>
-            </label>
+            <div class="form-row">
+                <label for="name">NAME</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-row">
+                <label for="email">EMAIL</label>
+                <input type="text" id="email" name="email">
+            </div>
             <div class="consent">
                 <label for="consent" class="consent_label">
                     <input id="consent" type="checkbox" />
                     <span>
                         <img src="assets/Checkmark.svg" alt="checkmark icon">
                     </span>
-                    <p> I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)
-                    </p>
+                    I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)
                 </label>
             </div>
-            <button type="button">Send</button>
+            <button type="button" class="form__button">Send</button>
         </form>
     </div>
 </section>
