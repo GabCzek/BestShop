@@ -13,7 +13,7 @@
   padding: 105px 0;
   height: 100%;
 
-  @media (max-width: 960px) {
+  @media (max-width: 1170px) {
     padding: 10% 0;
   }
 }
@@ -26,9 +26,14 @@
   justify-content: space-between;
 
   @media (max-width: 960px) {
+    margin: 0 8%;
+  }
+
+  @media (max-width: 1170px) {
     flex-direction: column;
     height: auto;
-    margin: 0 8%;
+    margin: 0 18%;
+    padding-top: 2%;
     align-items: center;
     border: 1px solid darken($color-light-grey, 10%);
     border-radius: 5px;
@@ -36,25 +41,27 @@
 }
 
 .benefits_article-first {
-  @media (max-width: 960px) {
-  flex-direction: column-reverse;
+  @media (max-width: 1170px) {
+    flex-direction: column-reverse;
   }
 }
 
 .benefits_article-second {
-  @media (max-width: 960px) {
+  @media (max-width: 1170px) {
     padding: 2%;
-
   }
 }
-
-
 
 .benefits_article h3,
 .benefits_article-last h3 {
   font-family: $main-font;
   font-size: 36px;
   line-height: 1.1em;
+
+  @media (max-width: 1170px) {
+    padding-bottom: 6%;
+    font-size: 30px;
+  }
 
   @media (max-width: 960px) {
     padding-bottom: 10%;
@@ -67,7 +74,7 @@
   font-family: $secondary-font;
   line-height: 1.5em;
 
-  @media (max-width: 960px) {
+  @media (max-width: 1170px) {
     max-width: 100%;
     font-size: 14px;
   }
@@ -78,8 +85,9 @@
   flex-direction: column;
   justify-content: space-between;
   margin: 90px 35px;
-  @media (max-width: 960px) {
-    margin: 0 5% 10% 5%;
+
+  @media (max-width: 1170px) {
+    margin: 0 5% 5% 5%;
   }
 }
 
@@ -88,7 +96,7 @@
   height: 4px;
   width: 330px;
 
-  @media (max-width: 960px) {
+  @media (max-width: 1170px) {
     display: none;
   }
 }
@@ -108,7 +116,8 @@
 .benefits_article-text1 {
   flex: 0 0 auto;
   max-width: 416px;
-  @media (max-width: 960px) {
+
+  @media (max-width: 1170px) {
     max-width: 100%;
   }
 }
@@ -121,8 +130,8 @@
   max-height: 100%;
   flex: 0 1 auto;
 
-  @media (max-width: 960px) {
-    width: 90%;
+  @media (max-width: 1170px) {
+    width: 80%;
     height: auto;
   }
 }
@@ -139,7 +148,7 @@
   right: 21%;
   border-radius: 41px;
 
-  @media (max-width: 960px) {
+  @media (max-width: 1170px) {
     width: 48%;
     height: 42%;
     top: 18%;
@@ -156,7 +165,7 @@
   z-index: 1;
   max-width: 100%;
 
-  @media (max-width: 960px) {
+  @media (max-width: 1170px) {
     padding: 10%;
   }
 }
@@ -165,16 +174,17 @@
   flex: 0 0 auto;
   margin: 70px 25px;
   max-width: 416px;
-  @media (max-width: 960px) {
+
+  @media (max-width: 1170px) {
     max-width: 100%;
-    margin: 5% 5% 3% 5%;
+    margin: 5% 5% 3% 2%;
   }
 }
 
 .benefits_article-text2 h3 {
   padding-right: 100px;
 
-  @media (max-width: 960px) {
+  @media (max-width: 1170px) {
     padding-right: 5%;
   }
 }
@@ -185,8 +195,9 @@
   position: relative;
   padding: 2% 6%;
   flex: 0 1 auto;
-  @media (max-width: 1124px) {
-    width: 231px;
+
+  @media (max-width: 1170px) {
+    width: 60%;
     height: auto;
     margin-left: 10%;
   }
@@ -203,8 +214,8 @@
   left: 10%;
   top: 3%;
 
-  @media (max-width: 680px) {
-    width: 58%;
+  @media (max-width: 1170px) {
+    width: 60%;
   }
 }
 
@@ -225,10 +236,14 @@
   gap: 50px;
 
   @media (max-width: 960px) {
+    margin: 0 8%;
+  }
+
+  @media (max-width: 1170px) {
     flex-direction: column;
     height: auto;
     gap: 0;
-    margin: 0 8%;
+    margin: 0 18%;
     border: 1px solid darken($color-light-grey, 10%);
     border-radius: 5px;
   }
@@ -236,7 +251,8 @@
 
 .benefits_article-last h3 {
   padding-right: 200px;
-  @media (max-width: 960px) {
+
+  @media (max-width: 1170px) {
     padding: 5% 8% 8% 0;
   }
 }
@@ -248,7 +264,7 @@
   flex-grow: 1;
   padding: 70px 35px;
 
-  @media (max-width: 960px) {
+  @media (max-width: 1170px) {
     padding: 5% 5%;
     height: auto;
   }
@@ -261,16 +277,24 @@
   align-items: center;
   justify-content: center;
 
-  @media (max-width: 960px) {
-    border-ridius: 5px;
+  @media (max-width: 1170px) {
+    border-radius: 5px;
+    height: 17em;
+  }
+
+  @media (max-width: 760px) {
+    height: 13em;
   }
 }
 
 .trumpet-img img {
   height: 207px;
-  @media (max-width: 960px) {
+
+
+  @media (max-width: 1170px) {
     margin-top: 20%;
-    width: 100%;
+    width: 80%;
     height: auto;
   }
+
 }
