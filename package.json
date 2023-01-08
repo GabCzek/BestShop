@@ -12,5 +12,17 @@
   },
   "dependencies": {
     "sass": "^1.56.1"
-  }
+  },
+  "description": "https://warm-meringue-7a8a97.netlify.app",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabCzek/BestShop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GabCzek/BestShop/issues"
+  },
+  "homepage": "https://github.com/GabCzek/BestShop#readme"
 }
