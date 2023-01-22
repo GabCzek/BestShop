@@ -11,7 +11,7 @@
     "parcel": "^2.8.0"
   },
   "dependencies": {
-    "sass": "^1.56.1"
+    "sass": "^1.57.1"
   },
   "description": "https://warm-meringue-7a8a97.netlify.app",
   "main": "app.js",

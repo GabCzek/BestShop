@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BestShop</title>
-    <link rel="stylesheet" href="/index.574c7455.css">
+    <link rel="stylesheet" href="/index.47ca9330.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;800&display=swap" rel="stylesheet">
@@ -30,6 +30,7 @@
                 <li><a href="#statistics" class="ref">Why Us</a></li>
                 <li><a href="#benefits" class="ref">Benefits</a></li>
                 <li><a href="#pricing" class="ref">Prices</a></li>
+                <li><a href="#calculator" class="ref">Calculator</a></li>
                 <li><a href="#contact" class="ref">Contact</a></li>
             </ul>
         </nav>
@@ -161,6 +162,77 @@
     </div>
 </section>
 
+<section class="calculator" id="calculator">
+    <div class="container calculator_container">
+        <h2>Calculate how much you'll pay</h2>
+            <div class="calculator_data">
+                <form class="calculator_enter-data">
+                    <div class="calculator_form-row calculator_form-rows">
+                        <input type="number" class="form-input" id="products" placeholder="Products quantity" min="1">
+                    </div>
+                    <div class="calculator_form-row calculator_form-rows">
+                        <input type="number" class="form-input" id="orders" placeholder="Estimated orders in month" min="1">
+                    </div>
+                    <div class="calculator_form-dropdown calculator_form-rows" id="package">
+                        <div class="select-input">
+                            Choose package
+                        </div>
+                        <ul class="select-dropdown">
+                            <li data-value="0">Basic</li>
+                            <li data-value="30">Professional</li>
+                            <li data-value="60">Premium</li>
+                        </ul>
+                    </div>
+                    <label class="calculator_form-checkbox calculator_form-rows">
+                        <input id="accounting" class="checkbox_input" type="checkbox">
+                        <span>
+                        <img src="/Checkmark.c57fbd17.svg" alt="checkmark icon">
+                        </span>
+                        <p>Accounting</p>
+                    </label>
+                    <label class="calculator_form-checkbox calculator_form-rows">
+                        <input id="rental" class="checkbox_input" type="checkbox">
+                        <span>
+                        <img src="/Checkmark.c57fbd17.svg" alt="checkmark icon">
+                        </span>
+                        <p>Rental of a payment terminal</p>
+                    </label>
+                </form>
+                <div class="calculator_data-info">
+                    <ul>
+                        <li>
+                           <span>Products</span>
+                            <span>$3</span>
+                            <span class="bold-span">$3</span>
+                        </li>
+                        <li>
+                            <span>Orders</span>
+                            <span>$7</span>
+                            <span class="bold-span">$7</span>
+                        </li>
+                        <li>
+                            <span>Package</span>
+                            <span>Basic</span>
+                            <span class="bold-span">$0</span>
+                        </li>
+                        <li>
+                            <span>Accounting</span>
+                            <span class="bold-span">$45</span>
+                        </li>
+                        <li>
+                            <span>Terminal</span>
+                            <span class="bold-span">$10</span>
+                        </li>
+                    </ul>
+                    <div class="calculator_total">
+                        <span class="calculator_total-text">Total</span>
+                        <span class="total_bold-span">$0</span>
+                    </div>
+                </div>
+            </div>
+    </div>
+</section>
+
 <section class="contact" id="contact">
     <div class="container contact_container">
         <div class="questions--contact">
@@ -177,7 +249,7 @@
                 </div>
             </div>
         </div>
-        <form>
+        <form class="contact_form">
             <div class="form-row">
                 <label for="name">NAME</label>
                 <input type="text" id="name" name="name">
@@ -219,5 +291,5 @@
 
 <script src="/BestShop.3464ddca.js"></script></body>
 
-<script src="/index.7c0ccee6.js"></script>
+<script src="/index.cea00a9b.js"></script>
 </html>

@@ -21,11 +21,11 @@ header {
   padding: 17px 0 17px 135px;
   text-decoration: none;
 
-  @media (max-width: 900px) {
+  @media (max-width: 960px) {
     padding-left: 50px;
   }
 
-  @media (max-width: 670px) {
+  @media (max-width: 790px) {
     padding-left: 0;
   }
 }
@@ -36,8 +36,12 @@ header {
   justify-content: space-between;
   padding-right: 135px;
 
-  @media (max-width: 900px) {
+  @media (max-width: 960px) {
     padding-right: 50px;
+  }
+
+  @media (max-width: 790px) {
+    padding-right: 0;
   }
 
   @media (max-width: 670px) {
