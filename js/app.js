@@ -38,7 +38,6 @@ for (let i = 0; i < formInput.length; i++) {
     }
 }
 
-selectInput.addEventListener("mouseover", handleShow);
 selectInput.addEventListener("click", handleShow);
 function handleShow(event) {
     selectDropdown.classList.toggle("open");
